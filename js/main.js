@@ -122,10 +122,10 @@ document.addEventListener("DOMContentLoaded", () => {
                                 var num = row.insertCell(0);
                                 var Xn = row.insertCell(1);
                                 var Xna = row.insertCell(2);
-                                var rand = row.insertCell(4);
+                                var rand = row.insertCell(3);
                                 num.innerHTML = r;
                                 Xn.innerHTML = res.x[r];
-                                Xna.innerHTML = res.x[r]*a;
+                                Xna.innerHTML = res.x[r]*a.value;
                                 rand.innerHTML = res.res[r];
                             }
                         }

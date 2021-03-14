@@ -9,7 +9,7 @@ export default class congruenciaAditivo{
         let y = [this.y];
         let res = [this.x];
         let sum = 0;
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 1; i <= 11; i++) {
             x[i] = res[i-1];
             y[i] = x[i-1];
             sum = (x[i] + y[i]);
