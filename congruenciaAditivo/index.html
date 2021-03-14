@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min (2).css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congruencia Aitivo</title>
+</head>
+<body class="bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success" id="navbar"></nav>
+    <div class="container mt-3 bg-light p-3">
+        <h1>Metodo de Congruencia Aditivo</h1>
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <div class="card bg-dark text-light p-2">
+                <h2 class="text-light">Datos y semillas</h2>
+                <form class="was-validated">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-lg-12 mt-3">
+                                <div class="input-group">
+                                    <div class="input-group-preppend">
+                                        <span class="input-group-text bg-danger text-light">X1</span>
+                                    </div>
+                                    <input type="number" class="form-control" id="x1" name="x1" placeholder="Semilla X1" pattern="[0-9]{1,9}" aria-describedby="generarCM" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-3">
+                                <div class="input-group">
+                                    <div class="input-group-preppend">
+                                        <span class="input-group-text bg-danger text-light">X2</span>
+                                    </div>
+                                    <input type="number" class="form-control" id="x2" name="x2" placeholder="Semilla X2(xn-1)" pattern="[0-9]{1,9}" aria-describedby="generarCM" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-3">
+                                <div class="input-group">
+                                    <div class="input-group-preppend">
+                                        <span class="input-group-text bg-danger text-light">M</span>
+                                    </div>
+                                    <input type="number" class="form-control" id="m" name="m" placeholder="M" pattern="[0-9]{1,9}" aria-describedby="generarCM" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-3">
+                                <div class="input-group">
+                                    <!--<div class="input-group-append">-->
+                                    <button type="submit" class="btn btn-success btn-sm btn-block" id="generarCA">
+                                        Generar
+                                        <svg width="1.6rem" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                            <path style="fill:#FF5368;" d="M302.4,43.109L145.472,1.061c-16.488-4.418-33.435,5.367-37.853,21.854L65.57,179.843
+                                                c-4.418,16.488,5.367,33.435,21.854,37.853l156.928,42.048c16.488,4.418,33.435-5.367,37.853-21.854l42.049-156.928
+                                                C328.673,64.475,318.888,47.528,302.4,43.109z"/>
+                                            <path style="fill:#C5324F;" d="M316.254,51.112c-10.304,2.771-18.893,10.803-21.852,21.851L261.019,197.55
+                                                c-4.786,17.862-23.146,28.462-41.008,23.676L95.424,187.843c-11.052-2.963-22.298,0.462-29.85,7.999
+                                                c2.772,10.304,10.802,18.895,21.851,21.854l156.928,42.048c16.488,4.418,33.435-5.367,37.853-21.854l42.049-156.928 C327.216,69.914,323.791,58.664,316.254,51.112z"/>
+                                            <path style="fill:#FF5368;" d="M446.43,431.037l-42.048-156.928c-4.418-16.488-21.366-26.272-37.853-21.854l-156.928,42.048
+                                                c-16.488,4.418-26.272,21.365-21.854,37.853l42.049,156.928c4.418,16.488,21.365,26.272,37.853,21.854l156.928-42.049
+                                                C441.062,464.473,450.848,447.525,446.43,431.037z"/>
+                                            <path style="fill:#C5324F;" d="M404.381,274.109c-2.961-11.048-11.55-19.078-21.854-21.85c-7.537,7.553-10.961,18.802-8,29.85
+                                                l33.383,124.586c4.786,17.862-5.814,36.221-23.676,41.008l-124.587,33.384c-11.048,2.96-19.078,11.549-21.85,21.853
+                                                c7.553,7.537,18.802,10.961,29.85,8.001l156.928-42.049c16.488-4.418,26.272-21.365,21.854-37.853L404.381,274.109z"/>
+                                            <g>
+                                                <ellipse style="fill:#FFF9EB;" cx="349.852" cy="324.814" rx="23.18" ry="23.18"/><ellipse style="fill:#FFF9EB;" cx="284.286" cy="438.368" rx="23.18" ry="23.18"/>
+                                                <circle style="fill:#FFF9EB;" cx="317.087" cy="381.6" r="23.18"/><ellipse style="fill:#FFF9EB;" cx="162.123" cy="73.631" rx="23.18" ry="23.18"/>
+                                                <ellipse style="fill:#FFF9EB;" cx="251.693" cy="97.62" rx="23.18" ry="23.18"/><ellipse style="fill:#FFF9EB;" cx="138.13" cy="163.185" rx="23.18" ry="23.18"/>
+                                                <ellipse style="fill:#FFF9EB;" cx="227.685" cy="187.192" rx="23.18" ry="23.18"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="card bg-dark text-light p-2">
+                <h2 class="text-light">Resultado</h2>
+                    <table class="table table-sm table-dark table-bordered table-striped">
+                        <thead class="">
+                            <tr>
+                                <th>N</th>
+                                <th>X<sub>n</sub></th>
+                                <th>aX<sub>n</sub>+c</th>
+                                <th>aX<sub>n</sub>+c % m</th>
+                            </tr>
+                        </thead>
+                        <tbody id="secCgM" class="border-dark border-1"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+<script type="module" src="../js/main.js"></script>
+</body>
+</html>
