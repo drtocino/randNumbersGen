@@ -22,4 +22,21 @@ export default class congruenciaAditivo{
             res: res
         };
     }
+    generarCongAditivo(){
+        const res = this.resultado();
+        secCA.innerHTML = '';
+        for (let r = 1; r < res.res.length - 1; r++) {
+            var row = secCA.insertRow(r-1);
+            var num = row.insertCell(0);
+            var Xn = row.insertCell(1);
+            var Xn2 = row.insertCell(2);
+            var suma = row.insertCell(3);
+            var rand = row.insertCell(4);
+            num.innerHTML = r;
+            Xn.innerHTML = res.x[r];
+            Xn2.innerHTML = res.y[r];
+            suma.innerHTML = res.x[r] + res.y[r];
+            rand.innerHTML = res.res[r];
+        }
+    }
 }

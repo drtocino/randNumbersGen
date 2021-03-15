@@ -13,7 +13,6 @@ export default class productoMedio{
         for (let i = 1; i <= 10; i++) {
             prod = x[i-1] * y[i-1];
             aux = prod.toString();
-            //console.log(prod)
             if(aux.length < 5){
                 medio = aux.substr(1, aux.length-2);
             }else{
@@ -29,5 +28,22 @@ export default class productoMedio{
             y: y,
             res: res
         };
+    }
+    generarProdMedio(){
+        const res = this.resultado();
+        secPM.innerHTML = '';
+        for (let r = 0; r < res.res.length - 1; r++) {
+            var row = secPM.insertRow(r);
+            var num = row.insertCell(0);
+            var Xn = row.insertCell(1);
+            var Xm = row.insertCell(2);
+            var Xnx = row.insertCell(3);
+            var rand = row.insertCell(4);
+            num.innerHTML = r+1;
+            Xn.innerHTML = res.x[r];
+            Xm.innerHTML = res.y[r];
+            Xnx.innerHTML = res.x[r]*res.y[r];
+            rand.innerHTML = res.res[r+1];
+        }
     }
 }
